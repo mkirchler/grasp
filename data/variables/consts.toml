@@ -1,0 +1,58 @@
+CENTER_SPLITS = [
+    [
+        10003,
+        11001,
+        11002,
+        11003,
+        11004,
+        11005,
+        11006,
+        11007,
+    ],
+    [
+        11008,
+        11009,
+        11010,
+    ],
+    [
+        11011,
+        11012,
+        11013,
+        11014,
+    ],
+    [
+        11016,
+        11017,
+        11018,
+        11020,
+        11021,
+        11022,
+        11023,
+    ],
+]
+
+SOURCES = [
+    "condition_occurrence",
+    'procedure_occurrence',
+    'drug_exposure',
+]
+
+OPENAI_ORG = ""
+
+WASHOUT_DAYS = 731               # = 365 * 2 + 1
+REMOVE_BASELINE_DATE_DATA = true
+MAX_EXPOSURE_DAYS = 36500    # = 365 * 100
+CENSORING_OFFSET_DAYS = 2920 # = 365 * 8
+OVERALL_END_OF_FOLLOWUP = "2017-03-31" # is <=, not <
+
+[EXTRA_CONCEPTS]
+age_at_baseline = "Age at baseline"
+sex_male = "Biological sex is male"
+sex_female = "Biological sex is female"
+
+
+[EMPTY_CONCEPTS]
+condition_occurrence = []
+procedure_occurrence = []
+drug_exposure = []
+extra = []

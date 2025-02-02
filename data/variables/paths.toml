@@ -1,0 +1,57 @@
+
+
+UKB_PHENO_FILE = "/dhc/projects/ukbiobank/ukbiobank_77717/original/phenotypes/ukb49791.csv"
+
+### VOCABULARY
+CONCEPTS = 'external_data/vocabulary2/CONCEPT.csv'
+CONCEPT_RELATIONSHIP = 'external_data/vocabulary2/CONCEPT_RELATIONSHIP.csv'
+CONCEPT_SYNONYM = 'external_data/vocabulary2/CONCEPT_SYNONYM.csv'
+RELATIONSHIP = 'external_data/vocabulary2/RELATIONSHIP.csv'
+ANCESTORS = 'external_data/vocabulary2/CONCEPT_ANCESTOR.csv'
+DRUG_STRENGTH = 'external_data/vocabulary2/DRUG_STRENGTH.csv'
+
+### OMOP data
+PROCESSED_OMOP_DIR = 'data/omop/'
+OMOP_PATH = "/dhc/projects/ukbiobank/ukbiobank_77717/original/phenotypes/health_related_outcomes/omop/"
+PROCESSED_OMOP = "data/omop/{source}.pkl"
+PROCESSED_SPARSE_OMOP = "data/omop/{split}/{sources}_min{min_count}_bin{binarize_counts}.pkl"
+PROPAGATED_SPARSE_OMOP = "data/omop_prop/{split}/{sources}_min{min_count}_bin{binarize_counts}_anc{ancestors}.pkl"
+PROPAGATED_SPARSE_OMOP_SMALLN = "data/omop_prop_smalln/{split}/{n}/{sources}_min{min_count}_bin{binarize_counts}_anc{ancestors}.pkl"
+OMOP_DATE_RANGES = 'data/misc/omop_date_ranges.pkl'
+
+
+PROCESSED_EXTRA = 'data/misc/extra.csv'
+EXTRA_METADATA = 'data/misc/extra_metadata.pkl'
+
+### endpoint processing
+MANUAL_ENDPOINTS = "data/endpoints/endpoint_selection/manual_endpoint_selection.txt"
+UKB_ENDPOINTS_FROM_OMOP = "data/endpoints/ukb_endpoints_from_omop_{cm}.csv"
+SURVIVAL_PREPROCESSED_FROM_OMOP = "data/endpoints/survival_endpoints_from_omop.csv"
+META_PREPROCESSED = "data/endpoints/survival_endpoints_meta.csv"
+OMOP_DEATHS_FILE = "/dhc/home/matthias.kirchler/tmp_ukb_mirror/omop/omop_death.txt"
+ENDPOINT_SPECIFIC_EXCLUSIONS_FROM_OMOP = 'data/endpoints/exclusions/endpoint_specific_exclusions_from_omop.pkl'
+FULL_EXCLUSIONS_FROM_OMOP = 'data/endpoints/exclusions_from_omop/{endpoint}.csv'
+
+### endpoint processing R
+UKB_ICD_LONGFORMAT = "data/endpoints/ukb_icd_longformat.csv"
+UKB_ICD_FROM_OMOP_LONGFORMAT = "data/endpoints/ukb_icd_from_omop_longformat_{cm}.csv"
+UKB_ICD_FROM_OMOP_LONGFORMAT_NOCM = "data/endpoints/ukb_icd_from_omop_longformat_nocm.csv"
+UKB_ICD_FROM_OMOP_LONGFORMAT_WCM = "data/endpoints/ukb_icd_from_omop_longformat_wcm.csv"
+UKB_ENDPOINTS_INTERM = "data/endpoints/intermediate_ukb_endpoints.csv"
+UKB_ENDPOINTS_FROM_OMOP_INTERM = "data/endpoints/intermediate_ukb_endpoints_from_omop_{cm}.csv"
+ENDPOINT_DEFINITIONS = "external_data/endpoints/UKBB_definitions_demo_TEST.csv"
+FLAGSHIP_ENDPOINTS = "external_data/endpoints/flagship_endpoints.csv"
+
+
+### embeddings downloads
+OPENAI_KEY = 'keys/openai.key'
+OPENAI_NEW_EMBEDDINGS = 'data/raw_embeddings/openai_new/{source}.csv.gz'
+OPENAI_ONTO_BATCH = 'data/raw_embeddings/tmp_batch/openai_ontology/{source}.pkl'
+OPENAI_ONTO_BATCH_FINISHED = 'data/raw_embeddings/tmp_batch/openai_ontology/{source}.done'
+OPENAI_ONTO_EMBEDDINGS = 'data/raw_embeddings/openai_ontology/{source}.csv.gz'
+OPENAI_ONTO_EMBEDDINGS_ROBUST = 'data/raw_embeddings/openai_ontology_tmprob/{source}.csv.gz'
+
+
+### embedding processing
+PROCESSED_SET_DATA_DIR = "data/embeddings/"
+
